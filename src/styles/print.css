@@ -1,0 +1,148 @@
+/* Screen: the print resume is never shown */
+.print-resume {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 15mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10pt;
+    line-height: 1.4;
+    overflow: visible !important;
+  }
+
+  .screen-only,
+  .skip-link {
+    display: none !important;
+  }
+
+  .print-resume {
+    display: block;
+    font-family: var(--font-body);
+    color: #000;
+  }
+
+  .print-resume * {
+    color: #000 !important;
+    background: transparent !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .pr-head {
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #000;
+    margin-bottom: 10pt;
+  }
+
+  .pr-head h1 {
+    margin: 0 0 2pt;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 26pt;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .pr-title {
+    margin: 0 0 4pt;
+  }
+
+  .print-resume p {
+    margin: 0 0 5pt;
+  }
+
+  .print-resume h2 {
+    margin: 14pt 0 5pt;
+    padding-bottom: 2pt;
+    border-bottom: 0.75pt solid #000;
+    font-size: 10.5pt;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    break-after: avoid;
+  }
+
+  .print-resume h3 {
+    margin: 0 0 2pt;
+    font-size: 11.5pt;
+    font-weight: 800;
+    break-after: avoid;
+  }
+
+  .print-resume h4 {
+    margin: 6pt 0 2pt;
+    font-size: 10pt;
+    font-weight: 700;
+    break-after: avoid;
+  }
+
+  .print-resume ul {
+    margin: 0 0 4pt;
+    padding-left: 14pt;
+    list-style: disc;
+  }
+
+  .print-resume li {
+    margin: 0 0 2pt;
+    break-inside: avoid;
+  }
+
+  .pr-project {
+    margin-top: 8pt;
+  }
+
+  .pr-role {
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .pr-tech {
+    font-size: 9pt;
+  }
+
+  .pr-group {
+    break-inside: avoid-page;
+  }
+
+  .pr-skills div {
+    display: block;
+    margin-bottom: 2pt;
+    break-inside: avoid;
+  }
+
+  .pr-skills dt {
+    display: inline;
+    font-weight: 700;
+  }
+
+  .pr-skills dt::after {
+    content: " ";
+  }
+
+  .pr-skills dd {
+    display: inline;
+    margin: 0;
+  }
+
+  .pr-note {
+    font-style: italic;
+  }
+
+  .pr-training {
+    list-style: none !important;
+    padding-left: 0 !important;
+  }
+
+  .print-resume a {
+    text-decoration: none;
+  }
+}

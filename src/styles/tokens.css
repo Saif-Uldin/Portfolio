@@ -1,0 +1,39 @@
+:root {
+  /* Surface */
+  --bg: #0a0d14;
+  --bg-deep: #070a10;
+  --surface: #111722;
+  --surface-2: #161e2d;
+  --rule: #263142;
+  --rule-soft: #1a2230;
+
+  /* Ink */
+  --ink: #f0f3f8;
+  --ink-2: #9ba8ba;
+  --ink-3: #7f8da1;
+
+  /* Accents */
+  --cyan: #63d8ff;
+  --cyan-dim: #2a7f9c;
+  --amber: #d7a968;
+  --amber-dim: #8a6a3d;
+
+  /* Paper (light surface for the timeline) */
+  --paper: #f3efe7;
+  --paper-ink: #14181f;
+  --paper-ink-2: #4a5568;
+  --paper-rule: #cfc8b9;
+
+  /* Type */
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Manrope Variable", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Layout */
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1280px;
+  --header-h: 56px;
+  --radius: 4px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
